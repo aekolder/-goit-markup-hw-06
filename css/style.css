@@ -838,6 +838,7 @@ display: block;
     background: transparent;
     padding: 0;
     cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal{
@@ -864,7 +865,10 @@ display: block;
     transform: translate(-50%,-50%) scale(0);
 }
 
-
+.modal-close-btn:hover,
+.modal-close-btn:focus{
+    fill: var(--accent-color);
+}
 
 .modal-header{
     font-weight: bold;
